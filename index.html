@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="text-center text-5xl font-bold text-cyan-400">Money Master</h1>
+    </header>
+    <!-- section money calculation -->
+    <section class="grid grid-cols-2 gap-4 mt-8">
+        <div>
+            <img class="w-9/12 mx-auto" src="money-calculation.jpg" alt="">
+        </div>
+        <div class="shadow mx-auto w-9/12">
+            <h1 class="text-center font-bold text-xl">Income</h1>
+            <div class="flex justify-center align-center mt-5 gap-4">
+                <h1>Income: </h1>
+                <input id="input-income" class="bg-slate-300" type="text">
+            </div>
+            <h1 class="text-center font-bold mt-4 text-xl">Expenses</h1>
+            <div>
+                <div class="flex justify-center align-center mt-5 gap-4">
+                    <h1>Food:</h1>
+                    <input id="input-food" class="bg-slate-300" type="text">
+                </div>
+                <div class="flex justify-center align-center mt-5 gap-4">
+                    <h1>Rent: </h1>
+                    <input id="input-rent" class="bg-slate-300" type="text">
+                </div>
+                <div class="flex justify-center align-center mt-5 gap-4">
+                    <h1>Clothes: </h1>
+                    <input id="input-clothes" class="bg-slate-300" type="text">
+                </div>
+                <div class="flex justify-center align-center mt-2">
+                    <button id="calculation-btn" class="text-center bg-blue-400 px-5 py-2 mt-2">Calculation</button>
+                </div>
+                
+            </div>
+            <h1 class="text-center font-bold mt-4 text-xl">Total Expenses: <span id="total-expances">0</span> </h1>
+            <h1 class="text-center font-bold mt-4 text-xl">Balance:<span id="balance-field">0</span> </h1>
+            <div class="flex justify-center align-center mt-2 gap-4">
+                <h1>Save:</h1>
+                <input id="save-field" class="bg-slate-300" type="text">
+                <h1>%</h1>
+                <button id="save-btn" class="bg-blue-400 px-5 py-2 ">Save</button>
+            </div>
+            <h1 class="text-center font-bold mt-4 text-xl">Saving Amount:<span id="savings">0</span> </h1>
+            <h1 class="text-center font-bold mt-4 text-xl">Remaning Balance: <span id="remaning-balance">0</span></h1>
+        </div>
+    </section>
+    <script src="js/calculaton.js"></script>
+</body>
+</html>
